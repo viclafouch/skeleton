@@ -1,6 +1,9 @@
 # SASS
 .sass-cache/*
 
+# CSS
+public/assets/css/*
+
 # Logs
 logs
 *.log
