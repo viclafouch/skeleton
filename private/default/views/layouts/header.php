@@ -3,6 +3,10 @@
 	<head>
 		<title><?= $title; ?></title>
 
+		<!--====  LIVERELOAD  ====-->
+		<!-- YOU NEED LIVERELOAD APPLICATION ON YOUR COMPUTER -->
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
    		<!--====  Meta  ====-->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
  		<meta name="description" content="<?= $description; ?>" />
@@ -13,6 +17,10 @@
 		<meta name="msapplication-navbutton-color" content="">
 		<meta name="apple-mobile-web-app-capable" content="">
 		<meta name="apple-mobile-web-app-status-bar-style" content="">
+
+		<meta name="twitter:card" content="" />
+		<meta name="twitter:site" content="" />
+		<meta name="twitter:creator" content="" />
 
 		<meta property="og:type"        content="" />
 		<meta property="og:title"       content="" />
@@ -37,6 +45,7 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="" />
 
 		<!--====  Scripts  ====-->
+		<script defer src="public/lib/jquery/jquery.min.js" type="text/javascript"></script>
 		<script defer src="public/assets/js/min/script.min.js" type="text/javascript"></script>
 
 		<!--====  Turbolinks  ====-->
