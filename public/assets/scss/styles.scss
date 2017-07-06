@@ -1,5 +1,5 @@
 /*======================================
-=            Your Main SCSS            =
+=            Your Main CSS            =
 ======================================*/
 
 // Compass doesn't accept multiple files if u want variables & mixins :(
@@ -15,7 +15,7 @@
  */
 
 
-/*=====  CHOOSE YOUR ICONS  ======*/
+//=====  CHOOSE YOUR ICONS  ======\\
 
 // Do you need Material Icon ?
 $material_icon: false;
@@ -32,7 +32,7 @@ $font_awesome: false;
 }
 
 
-/*----------  Variable  ----------*/
+// ----------  Variable  --------- \\
 
 $fonts: 'Arial'; // Fonts
 
@@ -58,7 +58,7 @@ $primaryShadow: none; // Primary shadow
 $secondaryShadow: none; // Secondary shadow
 $terciaryShadow: none; // Terciary shadow
 
-/*----------  Mixins  ----------*/
+// ----------  Mixins  ---------- \\
 
 // @Flex
 @mixin flex($flow, $justify, $align) {
@@ -94,7 +94,7 @@ $terciaryShadow: none; // Terciary shadow
     -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
 }
 
-/*----------  Fonctions  ----------*/
+// ----------  Fonctions  ---------- \\
 
 // Rgba faster
 @function rgbaExpress($color, $force) {
@@ -109,7 +109,7 @@ $terciaryShadow: none; // Terciary shadow
     @return $rgba;
 }
 
-/*----------  Classes  ----------*/
+ /* ----------  Classes  ---------- */
 
 .row, .col { @include display-flex; }
 

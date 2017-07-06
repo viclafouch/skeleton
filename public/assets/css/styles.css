@@ -1,16 +1,12 @@
 /*======================================
-=            Your Main SCSS            =
+=            Your Main CSS            =
 ======================================*/
 /**
  *
  * if you need loader : https://codepen.io/Viclafouch/ or https://github.com/viclafouch/Loaders
  *
  */
-/*=====  CHOOSE YOUR ICONS  ======*/
-/*----------  Variable  ----------*/
-/*----------  Mixins  ----------*/
-/*----------  Fonctions  ----------*/
-/*----------  Classes  ----------*/
+/* ----------  Classes  ---------- */
 .row, .col {
   display: -webkit-box;
   display: -ms-flexbox;
