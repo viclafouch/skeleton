@@ -8,7 +8,7 @@ else { $module = $_GET['module']; }
 if (!isset($_GET['action'])) { $action = DEFAULT_ACTION; } 
 else { $action = $_GET['action']; }
 
-$url = "default/controllers/" . $module . "/" . $action . ".php";
+$url = "./private/default/controllers/" . $module . "/" . $action . ".php";
 if (file_exists($url)) {
 	include_once($url);
 } else {
