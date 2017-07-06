@@ -6,6 +6,7 @@ const gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	cleanCSS = require('gulp-clean-css'),
 	uglify = require('gulp-uglify');
+	imagemin = require('gulp-imagemin');
 
 /*----------  Styles  ----------*/
 
@@ -22,6 +23,15 @@ gulp.task('styles', function() {
     	.pipe(rename({ suffix: '.min' }))
     	.pipe(cleanCSS({compatibility: 'ie8'}))
     	.pipe(gulp.dest('public/assets/css/min'));
+});
+
+/*----------  Images  ----------*/
+
+// Compressed task
+gulp.task('image', function() {
+	return gulp.src(['public/assets/img/*'])
+		.pipe(imagemin())
+		.pipe(gulp.dest('public/assets/imgComp'));
 });
 
 /*----------  Scripts  ----------*/
@@ -44,4 +54,4 @@ gulp.task('watch', function() {
 /*----------  Defaut  ----------*/
 
 // Default task
-gulp.task('default', ['styles', 'scripts', 'watch']);
+gulp.task('default', ['image', 'styles', 'scripts', 'watch']);
