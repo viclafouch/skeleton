@@ -1,23 +1,15 @@
 <?php
-	// Debugger
-	include_once("core/debugger.php");
+	/* Debugger */
+	include_once("private/core/debugger.php");
 
-	// Connect your database
-	include_once("database/database.php");
+	/* Connect your database */
+	include_once("private/database/database.php");
 
-	// Config your params
-	include_once("config/config.php");
+	/* Config your params */
+	include_once("private/config/config.php");
 
-	// Inject your own rules
-	include_once("rules/rules.php");
+	/* Inject your own rules */
+	include_once("private/rules/rules.php");
 
-	if (!isset($_GET['module'])) { $module = DEFAULT_MODULE; } 
-	else { $module = $_GET['module']; }
-
-	if (!isset($_GET['action'])) { $action = DEFAULT_ACTION; } 
-	else { $action = $_GET['action']; }
-
-	$location = "app/controller/" . $module . "/" . $action . ".php";
-
-	if(file_exists($location)) { include_once("$location"); }
-	else { die("Page not found"); }
+	/* Redirection to app */
+	include_once("private/rooter.php");

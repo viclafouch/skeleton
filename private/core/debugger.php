@@ -1,7 +1,9 @@
 <?php 
+	
+	/* Turn on all error reporting */
+	error_reporting(E_ALL);
 
-	error_reporting(E_ERROR | E_WARNING | E_PARSE);
-
+	/* Print out error to the browsers console */
 	function console_log($data) {
 	  echo '<script>';
 	  echo 'console.log('.json_encode($data).')';

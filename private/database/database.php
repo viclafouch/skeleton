@@ -1,5 +1,6 @@
 <?php 
 
+    /* Set TRUE if you're using a database */
     $activeDATA = false;
 
     if ($activeDATA) {
@@ -18,7 +19,6 @@
 
             /*---------- ----------*/
             
-
             $dns = 'mysql:host='.$host.';port='.$port.';dbname='.$db_name;
 
             $settings = array (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
