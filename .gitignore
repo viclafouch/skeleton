@@ -2,7 +2,7 @@
 .sass-cache/*
 
 # CSS
-public/assets/css/*
+*.css
 
 # Logs
 logs
