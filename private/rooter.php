@@ -9,4 +9,8 @@ if (!isset($_GET['action'])) { $action = DEFAULT_ACTION; }
 else { $action = $_GET['action']; }
 
 $url = "default/controllers/" . $module . "/" . $action . ".php";
-include_once($url);
+if (file_exists($url)) {
+	include_once($url);
+} else {
+	die('Page not found');
+}
