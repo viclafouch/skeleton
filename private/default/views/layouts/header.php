@@ -44,12 +44,6 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="" />
 		<link rel="apple-touch-icon" sizes="114x114" href="" />
 
-		<!--====  Scripts  ====-->
-		<script defer src="public/lib/jquery/jquery.min.js" type="text/javascript"></script>
-		<script defer src="public/assets/js/min/script.min.js" type="text/javascript"></script>
-
-		<!--====  Turbolinks  ====-->
-		<script defer src="public/lib/turbolinks/turbolinks.min.js"></script>
 		<meta name="turbolinks-cache-control" content="no-cache">
 	</head>
 	<body>

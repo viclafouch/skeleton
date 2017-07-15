@@ -4,7 +4,6 @@
 
 	// Your code here ...
 
-
 	$title_page = '';
 	$description_page = '';
 

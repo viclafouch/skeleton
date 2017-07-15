@@ -5,7 +5,8 @@ const gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	rename = require('gulp-rename'),
 	cleanCSS = require('gulp-clean-css'),
-	uglify = require('gulp-uglify');
+	uglify = require('gulp-uglify'),
+	concat = require('gulp-concat'),
 	imagemin = require('gulp-imagemin');
 
 /*----------  Styles  ----------*/
@@ -37,10 +38,11 @@ gulp.task('image', function() {
 /*----------  Scripts  ----------*/
 
 gulp.task('scripts', function() {
-	return gulp.src('public/assets/js/*.js')
-		.pipe(uglify())
-		.pipe(rename({ suffix: '.min' }))
-		.pipe(gulp.dest('public/assets/js/min'))
+	return gulp.src(['public/lib/jquery/jquery.min.js', 'public/lib/turbolinks/turbolinks.min.js', 'public/assets/js/*.js'])
+        .pipe(concat('script.min.js'))
+        .pipe(gulp.dest('public/assets/js/min'))
+        .pipe(uglify())
+        .pipe(gulp.dest('public/assets/js/min'));
 });
 
 /*----------  Live  ----------*/
