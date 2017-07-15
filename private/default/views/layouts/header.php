@@ -35,7 +35,7 @@
    		<link rel="stylesheet" type="text/css" href="public/lib/animate/animate.min.css">
 		
 		<!--====  Custom  ====-->
-   		<link rel="stylesheet" type="text/css" href="public/assets/css/min/styles.min.css">
+   		<link rel="stylesheet" type="text/css" href="public/assets/css/styles.min.css">
 
 		<!--====  Favicon  ====-->
    		<link rel="icon" type="image/png" href=""/>
